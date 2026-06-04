@@ -155,6 +155,16 @@ body.is-loading{overflow:hidden;}
 @media (max-width:900px){.ov-grid{grid-template-columns:1fr;gap:40px;}.ov-figure{max-width:680px;margin:0 auto;}}
 @media (max-width:600px){.overview{padding:10vh 6vw;}.ov-figure-frame{inset:10px;}}
 
+/* RERA registration — plain text below the overview */
+.rera{max-width:1500px;margin:48px auto 0;position:relative;z-index:2;}
+.rera-label{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--purple-light);margin-bottom:12px;}
+.rera-ids{font-family:var(--font-mono);font-size:14px;letter-spacing:.04em;color:var(--ink-2);line-height:1.7;}
+.rera-site{font-family:var(--font-mono);font-size:13px;letter-spacing:.04em;color:var(--ink-3);margin-top:6px;}
+@media (max-width:600px){
+  .rera{margin-top:36px;}
+  .rera-ids{font-size:12.5px;letter-spacing:.02em;}
+}
+
 /* HIGHLIGHTS */
 .highlights{background:var(--bg-1);padding-bottom:14vh;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden;}
 .highlights::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,var(--purple-glow),transparent 65%);bottom:-200px;left:-200px;filter:blur(100px);opacity:.35;pointer-events:none;}
